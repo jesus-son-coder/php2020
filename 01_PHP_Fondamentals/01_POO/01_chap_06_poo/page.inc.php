@@ -7,7 +7,7 @@ class page
     public $mots_cles = "TLA Consulting, Three Letter Abbreviation, les moteurs de recherche sont mes amis";
 
     public $buttons = array(
-        'Accueil' => 'acceuil.php',
+        'Accueil' => 'accueil.php',
         'Contacts' => 'contacts.php',
         'Services' => 'services.php',
         'Carte du site' => 'carte.php'
@@ -27,7 +27,7 @@ class page
         $this->AfficherStyles();
         echo "</head>\n<body>\n";
         $this->AfficherEntete();
-        $this->AfficherMenu($this->boutons);
+        $this->AfficherMenu($this->buttons);
         echo $this->contenu;
         $this->AfficherPied();
         echo "</body>\n</html>\n";
@@ -76,11 +76,11 @@ class page
     { ?>
         <table width="100%" cellpadding="12" cellspacing="0" border="0">
             <tr bgcolor="black">
-                <td align="left"><img src="./img/logo.JPG" /></td>
+                <td align="left"><img src="./img/logo.JPG" height="190px" /></td>
                 <td>
                     <h1>TLA Consulting</h1>
                 </td>
-                <td align="right"><img src="./img/logo2.JPG" /></td>
+                <td align="right"><img src="./img/logo2.JPG" height="190px" /></td>
             </tr>
         </table>
     <?php
@@ -94,10 +94,10 @@ class page
         // Calcul de la taille des boutons :
         $largeur = 100 / count($boutons);
 
-        while( list($nom, $url) = each($boutons)) {
+        foreach ($boutons as $nom => $url) {
             $this->AfficherBouton($largeur, $nom, $url, !$this->EstPageCourante($url));
         }
-
+        
         echo "</tr>\n";
         echo "</table>\n";
     }
