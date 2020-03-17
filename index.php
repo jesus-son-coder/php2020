@@ -11,8 +11,9 @@
 </head>
 <body>
   <!-- Le reste du contenu -->
-  ...
-  Welcome !
+  <div class="container text-center">
+    <h1>Welcome !</h1>
+  </div>
   <!-- Librairies JavaScrip -->
   <!-- -------------------- -->
   <script src="./00_Librairies/01_00_jquery/jquery_3_3_1.js"></script>

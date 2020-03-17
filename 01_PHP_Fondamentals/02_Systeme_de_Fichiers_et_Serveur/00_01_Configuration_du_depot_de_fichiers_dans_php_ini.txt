@@ -1,0 +1,26 @@
+Il faut savoir que le fichier "php.ini" dispose de cinq directives permettant de contrôler le comportement de PHP vis-à-vis du dépôt de fichiers.
+
+Ces directives, leur valeur apr défaut et leur description sont dans listés ci-dessous :
+
+Directive :             description                                 Valeur par défaut
+---------------------   -----------------------------------------   ------------------
+"file_upload"           Indique si les dépôts de fichiers sont      On
+                        autorisés (On ou Off)
+
+"upload_tmp_dir"        Répertoire où seront temporairement         NULL
+                        stockés les fichiers en attente de
+                        traitement. Si cette valeur n'est pas
+                        précisée, le système utilisera son 
+                        répertoire temporaire par défaut.
+
+"upload_max_filesize"   Taille maximale admise pour les fichiers    2M
+                        déposés. Si un fichier dépose est de
+                        taille supérieure, PHP crée un fichier
+                        de 0 octet à sa place.
+
+"post_max_size"         Taille maximale des données POST acceptées  8M
+                        par PHP. Cette valeur doit être supérieure
+                        à celle de "upload_max_filesize" car elle
+                        représente la taille de toutes les données
+                        POST, pas simplement celle du fichier.                        
+                        
