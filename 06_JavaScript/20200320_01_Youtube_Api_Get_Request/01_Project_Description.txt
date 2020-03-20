@@ -1,0 +1,48 @@
+PROJECT DESCRIPTION
+-------------------
+
+-> Complete Youtube video search script
+
+-> Use Youtube Data API v3
+
+-> Animated Search box
+
+-> We will use the ChannelList and SearchList methods (Playlist, Upload videos, etc)
+
+-> We will use the FancyBox plugin to open videos
+
+-> Previous and Next Paging
+
+
+
+PROJECT SECTIONS
+----------------
+
+-> Section 1 : Project Introduction
+
+-> Section 2 : HTML & CSS
+
+-> Section 3 : Searchbar Style & Animation
+
+-> Section 4 : Youtube API GET Request (w. JQuery)
+
+-> Section 5 : Displaying Results from Response
+
+-> Section 6 : Paging Buttons & Lightbox
+
+
+
+WHAT YOU'LL LEARN
+------------------
+
+-> jQuery animate() method
+
+-> Youtube Data API v3
+
+-> Making a GET request using $.get()
+
+-> Loop through Result Set and insert into HTML
+
+-> API Page Tokens
+
+-> FancyBox jQuery Plugin
