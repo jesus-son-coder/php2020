@@ -1,0 +1,7 @@
+Il est possible d'otenir des informations supplémentaires sur le chemin d'accès d'un fichier.
+
+La fonction "dirname()" : renvoit la partie du chamin d'accès représentant le nom du répertoire contant le fichier.
+
+La fonction "basename()" : renvoit la partie du chemin d'accès représentant le nom du fichier.
+
+La fonction "disk_free_space()" : indique la quantité d'espace disponible pour le stockage des fichiers déposés. Lorsqu'on passe à cette fonction un chemin d'accès à un répertoire, elle renvoit le nombre d'octets disponibles sur le disque qui contient ce répertoire.

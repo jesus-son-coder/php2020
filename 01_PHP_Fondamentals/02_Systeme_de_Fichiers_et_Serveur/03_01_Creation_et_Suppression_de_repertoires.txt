@@ -1,0 +1,44 @@
+PHP permet non seulement de lire passivement des informations relatives aux répertoires, mais aussi de créer et ed supprimer des répertoires, respectivement avec les fonctions :
+- "mkdir()"
+- "rmdir()"
+
+Cependant, on ne peut créer et supprimer des répertoires que dans les chemins d'accès accessibles à l'utilisateur qui exécute le script.
+
+mkdir()
+-------
+La mise en oeuvre de la fonction "mkdir" est un peu délicate.
+Cette fonction prend deux paramètres :
+- le chemin d'accès au répertoire à créer (qui contient le nom du nouveau répertoire) ;
+- et les permissions à associer à ce répertoire.
+
+Voici un exemple :
+    
+    mkdir("/tmp/tests", 0777);
+
+
+!!!
+Toutefois, les permissions que vous avez indiquées ne seront pas nécessairement accordées car les véritables seront le résultat d'un "ET logique" entre celles que vous aurez indiquées et "l'inverse" du "umask" courant.
+Par exemple, si le umask a la valeur 022, les permissions accordées ici seront 0755.
+
+Pour éviter ce masquage, vous pouvez réinitialiser le umask avant de créer un répertoire :
+
+    $ancien_umask = umask(0);
+    mkdir("/tmp/tests", 0777);
+    umask($ancien_umask);
+
+!!! Notez que la fonction "umask()" n'a aucun effet sur un système Windows.
+
+
+rmdir()
+-------
+Supprime le répertoire qui lui est passé en paramètre.
+
+    // Unix :
+    rmdir("/tmp/tests");
+
+    et
+
+    // Windows :
+    rmdir("c:\\tmp\\tests");
+
+!!! "rmdir()" ne peut supprimer que des répertories vides !!!

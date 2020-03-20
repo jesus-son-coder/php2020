@@ -23,4 +23,6 @@ Directive :             description                                 Valeur par d
                         à celle de "upload_max_filesize" car elle
                         représente la taille de toutes les données
                         POST, pas simplement celle du fichier.                        
-                        
+
+
+Les données que vous devez gérer dans votre script PHP sont stockés dans le tableau superglobal $_FILES.

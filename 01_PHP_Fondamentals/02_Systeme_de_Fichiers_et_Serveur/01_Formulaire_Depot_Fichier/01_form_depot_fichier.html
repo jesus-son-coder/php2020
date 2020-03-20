@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administration - dépôt de fichiers</title>
+    <link rel="stylesheet" href="../../../00_Librairies/01_01_Bootstrap_3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dépôt de nouveaux fichiers</h1>
+
+        <form action="02_traitement_upload_fichier.php" method="POST" enctype="multipart/form-data">
+            <div>
+                <input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+                <label for="fichier">Fichier à déposer</label>
+                <input type="file" name="fichier" id="fichier" />
+                <input type="submit" value="Envoi du fichier" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<!--
+    Ici, le tableau superglobal $_FILES contiendra les éléments suivants :
+    ...sachant que "fichier" est le nom de l'élément <input type=file>
+
+    - "$_FILES['fichier']['tmp_name']" : correspond à l'emplacement où le fichier a été temporairement stocké sur le serveur web.
+
+    - "$_FILES['fichier']['name']" : correspond au nom du fichier sur le système de l'utilisateur.
+
+    - "$_FILES['fichier']['name']" : correspond à la taille du fichier en octets.
+
+    - "$_FILES['fichier']['type']" : correspond au type MIME du fichier (par exemple "text/plain" ou "image/gif")
+
+    - "$_FILES['fichier']['error']" : vous donnera les codes d'erreur associés au dépôt du fichier.
+
+-->
