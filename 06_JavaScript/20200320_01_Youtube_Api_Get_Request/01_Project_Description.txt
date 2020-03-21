@@ -51,3 +51,16 @@ WHAT YOU'LL LEARN
 Youtube API Key :
 -----------------
 AIzaSyAuwd5unHZnInjGb5LJzajnxTcWCLsJd6I
+
+API Page on Google Developers :
+https://console.developers.google.com/apis/credentials?hl=FR&project=rvck-youtube-api-platform&supportedpurview=project
+
+
+FancyBox :
+----------
+Page :
+https://fancyapps.com/fancybox/
+
+Latest version of FancyBox :
+http://fancyapps.com/fancybox/3/
+
