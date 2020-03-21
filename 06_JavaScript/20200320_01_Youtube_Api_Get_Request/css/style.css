@@ -135,4 +135,6 @@ footer{
 
 .paging-button {
 	border: 1px solid #ccc;
+	margin-right: 15px;
+	width: 150px;
 }
