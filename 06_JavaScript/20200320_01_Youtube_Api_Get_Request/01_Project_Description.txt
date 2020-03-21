@@ -46,3 +46,8 @@ WHAT YOU'LL LEARN
 -> API Page Tokens
 
 -> FancyBox jQuery Plugin
+
+
+Youtube API Key :
+-----------------
+AIzaSyAuwd5unHZnInjGb5LJzajnxTcWCLsJd6I
